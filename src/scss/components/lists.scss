@@ -1,0 +1,29 @@
+@import '../variable';
+%cleaner {
+    padding: 0;
+    margin: 0;
+}
+.pages-count {
+    @extend %cleaner;
+    display: flex;
+    flex-direction: row
+}
+
+.pages-count__item {
+    color: $main-color-grey;
+    font-size: $font-size-xl + 1px;
+    border-radius: 50%;
+    padding: $padding-l;
+}
+
+.pages-count__item-active {
+    color: $main-color-blue;
+    background-color: $main-color-white;
+}
+.pages-count__ancor {
+    text-decoration: none;
+    color: $main-color-black;
+}
+.pages-count__ancor-active {
+    color: $main-color-blue;
+}

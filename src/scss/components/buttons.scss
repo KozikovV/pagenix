@@ -1,0 +1,194 @@
+@import '../variable';
+
+%cleaner {
+    padding: 0;
+    margin: 0;
+}
+
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    max-width: 400px;
+    padding-top: $padding-m;
+    padding-bottom: $padding-m;
+    padding-right: $padding-xl;
+    padding-left: $padding-xl;
+    border: 3px solid $main-color-grey;
+    border-radius: 15px;
+    
+}
+
+.button--square-clean {
+    width: 100px;
+    height: 100px;
+    @extend %cleaner;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button--border-blue {
+   border-color: $main-color-blue;
+}
+
+.button--margin-left {
+    margin-left: auto;
+}
+.button--mg-rg {
+    margin-right: $margin-m;
+}
+.button--margin-left-position {
+    margin-left: $margin-s;
+}
+
+.button--bg-blue {
+    background-color: $main-color-blue;
+    border: none;
+}
+.button__icon {
+    font-size: $title-font-size - 3px;
+    color: $main-color-black;
+    margin-right: $margin-s;
+    vertical-align: middle;
+}
+.button__icon--clean {
+    margin: 0;
+    padding: 0;
+}
+
+.button__icon--blue {
+    color: $main-color-blue;
+}
+.button__icon--white {
+    color: $main-color-white;
+}
+
+.button__text {
+    font-size: $font-size-button;
+    color: $main-color-black;
+    font-weight: $font-weight-bold;
+}
+
+.button__text--blue {
+    color: $main-color-blue;
+}
+
+.button__text--white {
+    color: $main-color-white;
+}
+
+.oval-button {
+    display: inline-block;
+    position: relative;
+}
+
+.oval-button__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: $margin-xxs 0 0 $margin-s;
+}
+.oval-button__label {
+    position: relative;
+    padding: 0 0 0 ($padding-xl + $padding-xxs);
+    cursor: pointer;
+    color: $main-color-blue;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-xl + 4px;
+    text-transform: uppercase;
+}
+.oval-button__label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -30px;
+    width: 66px;
+    height: 34px;
+    border-radius: 13px;
+    background: $main-color-white;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+    transition: .2s;
+}
+.oval-button__input:checked + .oval-button__label:before {
+    background-color: $main-color-blue;
+}
+
+.oval-button__label:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -23px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: .2s;
+}
+.oval-button__input:checked + .oval-button__label:after {
+    left: 14px;
+}
+
+/*/////////////////filter////////////////*/
+
+.selection-btn {
+    padding-top: $padding-xl + 10px;
+    padding-left: $padding-xl + 10px;
+    border: 3px solid $border-color;
+}
+
+.selection-btn__item {
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    padding-bottom: $padding-xl + 10px;
+    margin-right: $margin-m;
+}
+
+
+.selection-btn__item--active {
+    color: $main-color-blue;
+    border-bottom: 3px solid $main-color-blue;
+}
+
+.selection-btn__count {
+    padding-left: $padding-s;
+}
+
+.selection-btn__icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $btn-lable-green;
+    margin-right: $margin-xs;
+}
+.selection-btn__icon--big {
+    width: 25px;
+    height: 25px;
+}
+.selection-btn__icon--mg {
+    margin-left: auto;
+}
+
+.selection-btn__icon--orange {
+    background-color: $btn-lable-orange;
+    color: $btn-lable-orange;
+}
+.selection-btn__font-icon--orange {
+    background-color: transparent;
+    color: $btn-lable-orange;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+}
+.selection-btn__icon--red {
+    background-color: $btn-lable-red;
+    color: $btn-lable-red;
+}
+.selection-btn__font-icon--black {
+    color: $main-color-black;
+    background-color: $main-color-white;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-l;
+}

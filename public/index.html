@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo image" width="198" height="195">
+            </div>
+            <div class="title title--border-right">
+                <h1 class="title__main">FutureDialog</h1>
+                <span class="title__helper">smart mobile dialog</span>
+            </div>
+            <div class="search-form">
+                <input type="search" name="search" id="search" class="search-form__input">
+                <div class="search-form__icon"><i class="icon-file-code-o"></i></div>
+            </div>
+            <a href="#" class="button button--border-blue button--margin-left">
+                <span class="button__icon button__icon--blue">+</span>
+                <span class="button__text button__text--blue">ADD CARD</span>
+            </a>
+            <a href="#" class="icon-ancor icon-ancor--pading--left">
+                <span class="icon-ancor__icon"><i class="icon-file-code-o"></i></span>
+            </a>
+            <a href="#" class="icon-ancor icon-ancor--pading-right">
+                <span class="icon-ancor__icon"><i class="icon-file-code-o"></i></span>
+                <span class="icon-ancor__count">8</span>
+            </a>
+            <div class="user-info user-info--padding-left user-info--border-left">
+                <h2 class="user-info__title">Superadmin</h2>
+                <span class="user-info__text">Tampere / Tampereen Raati</span>
+                <span class="user-info__icon">. . .</span>
+            </div>
+        </header>
+        <main class="content">
+            <aside class="sidebar">
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Dashbords</span>
+                            </a>
+                        </li>
+                        <li class="small-card small-card-active">
+                            <a href="">
+                                <div class="small-card__icon small-card__icon-active">+</div>
+                                <span class="small-card__title">Cards</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Feedback</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Open 311</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">RSS Feed</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Analytics</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Retetention</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Metrics</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Targeting</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Reports</span>
+                            </a>
+                        </li>
+                        <li class="small-card">
+                            <a href="#">
+                                <div class="small-card__icon">+</div>
+                                <span class="small-card__title">Users</span>
+                            </a>
+                        </li> 
+                    </ul>
+                </nav>  
+            </aside>
+            <article class="main-content">
+               <section class="main-content__top">
+                   <div class="title title--pd-lf">
+                       <h1 class="title__main">Cards</h1>
+                   </div>
+                   <div class="oval-button">
+                       <input type="checkbox" class="oval-button__input" id="oval-button">
+                       <label for="oval-button" class="oval-button__label">show only my activity</label>    
+                   </div>
+                   <a href="" class="button button--margin-left"><span class="button__icon"><i class="icon-file-code-o"></i></span><span class="button__text">LUNGUAGES</span></a>
+                   <a href="" class="button button--margin-left-position"><span class="button__icon"><i class="icon-file-code-o"></i></span><span class="button__text">CATEGORIES</span></a>
+                   <a href="" class="button button--bg-blue button--margin-left-position"><span class="button__icon button__icon--white"><i class="icon-file-code-o"></i></span><span class="button__text button__text--white">ADD CARD</span></a>
+               </section>
+               <article class="selection-cards">
+                   <section id="selection-btn" class="selection-btn clearfix">
+                        <button class="selection-btn__item selection-btn__item--active" onclick="filterSelection('all')">All items<span class="selection-btn__count">(99)</span></button>
+                        <button class="selection-btn__item" onclick="filterSelection('active')"><span class="selection-btn__icon"></span>Active<span class="selection-btn__count">(99)</span></button>
+                        <button class="selection-btn__item" onclick="filterSelection('shedules')"><span class="selection-btn__icon selection-btn__icon--orange"></span>Shedules<span class="selection-btn__count">(99)</span></button>
+                        <button class="selection-btn__item" onclick="filterSelection('expired')"><span class="selection-btn__icon selection-btn__icon--red"></span>expired<span class="selection-btn__count">(99)</span></button>
+                        <button class="selection-btn__item" onclick="filterSelection('archived')"><span class="selection-btn__icon selection-btn__font-icon--black"><i class="icon-file-code-o"></i></span>archived<span class="selection-btn__count">(99)</span></button>
+                        <button class="selection-btn__item" onclick="filterSelection('rss')"><span class="selection-btn__icon selection-btn__font-icon--orange"><i class="icon-file-code-o"></i></span>from rss<span class="selection-btn__count">(99)</span></button>
+                        <span class="text text--float">showing 1-20 from 299</span>
+                    </section>
+                    <form class="filters">
+                       <select name="select" id="select" class='select'>
+                           <option class="select__option" value="filters" selected>Filters</option>
+                           <option class="select__option" value="">Yes/no</option>
+                           <option class="select__option" value="">Helsinsky group</option>
+                           <option class="select__option" value="">Age range 30 - 40</option>
+                       </select>
+                       <span class="dots">:</span>
+                       <div class="oval-label oval-label--mr-position">
+                            <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                            <span class="oval-label__text">Yes/No</span>
+                            <span class="oval-label__icon-second">X</span>
+                        </div>
+                        <div class="oval-label oval-label--mr-position">
+                            <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                            <span class="oval-label__text">Age range 30-60</span>
+                            <span class="oval-label__icon-second">X</span>
+                        </div>
+                        <div class="oval-label oval-label--mr-position">
+                            <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                            <span class="oval-label__text">Newspaper</span>
+                            <span class="oval-label__icon-second">X</span>
+                        </div>
+                        <span class="icon"><i class="icon-file-code-o"></i></span>
+                        <span class="text--big">Sort by :</span>
+                        <select name="select" id="select" class='select select--mg-rg'>
+                            <option class="select__option" value="filters" selected>No selected</option>
+                            <option class="select__option" value="">Name</option>
+                            <option class="select__option" value="">value</option>
+                            <option class="select__option" value="">cards</option>
+                        </select>
+                        <a href="#" class="button button--square-clean button--mg-rg"><span class="button__icon button__icon--clean"><i class="icon-file-code-o"></i></span></a>
+                        <span class="icon icon--mr-lf"><i class="icon-file-code-o"></i></span>   
+                    </form>
+                    <section class="folders">
+                        <div class="folders__item">
+                            <div class="folders__logo folders__logo--mg-rh">
+                                <img src="images/empty-folder.png" alt="folder">
+                            </div>
+                            <div class="folders__text">
+                                <span class="folders__title">Cards about parking</span>
+                                <span class="folders__count">0 cards</span>
+                            </div>
+                        </div>
+                        <div class="folders__item">
+                            <div class="folders__logo folders__logo--mg-rh">
+                                <img src="images/full-folder.png" alt="folder">
+                            </div>
+                            <div class="folders__text">
+                                <span class="folders__title folders__title-blue">Helsinski government</span>
+                                <span class="folders__count">23 cards</span>
+                            </div>
+                        </div>
+                        <div class="folders__item">
+                            <div class="folders__logo folders__logo--mg-rh">
+                                <img src="images/full-folder.png" alt="folder">
+                            </div>
+                            <div class="folders__text">
+                                <span class="folders__title">Citizens</span>
+                                <span class="folders__count">999 cards</span>
+                            </div>
+                        </div>
+                        <div class="folders__item">
+                            <div class="folders__logo folders__logo--mg-rh">
+                                <img src="images/empty-folder.png" alt="folder">
+                            </div>
+                            <div class="folders__text">
+                                <span class="folders__title">Cards about parking</span>
+                                <span class="folders__count">0 cards</span>
+                            </div>
+                        </div>
+                    </section>
+               </article>
+               <section class="main-cards">
+                   <div class="row">
+                       <div class="col-3">
+                           <div class="card card--bg-grey card-active">
+                                <div class="card__logo">
+                                   <img src="images/veyer.png" alt="logo">
+                                </div>
+                                <div class="card__footer card__footer--position">
+                                    <a href="" class="button button--bg-blue"><span class="button__icon button__icon--white"><i class="icon-file-code-o"></i></span><span class="button__text button__text--white">ADD CARD</span></a>
+                                    <a href="#" class="button button--border-blue">
+                                        <span class="button__icon button__icon--blue">+</span>
+                                        <span class="button__text button__text--blue">ADD FOLDER</span>
+                                    </a>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <div class="aside-icon aside-icon--mr-auto">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                        </div>
+                                        <span class="selection-btn__icon selection-btn__icon--big"></span>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum tempore dignissimos, natus reiciendis rerum autem incidunt perspiciatis quae quia delectus, cumque asperiores voluptatibus molestias officia consequuntur soluta totam accusamus.</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                                <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <span class="selection-btn__icon selection-btn__icon--big selection-btn__icon--mg"></span>
+                                    </div>
+                                </div>
+                                <div class="card__content card__content--position">
+                                    <div class="card__logo card__logo--position">
+                                        <img src="images/full-folder-big.png" alt="image description">
+                                    </div>
+                                    <div class="card__text card__text--position">
+                                        <div class="oval-label oval-label--bg-white oval-label--mr-position oval-label--width">
+                                            <span class="oval-label__text">Helsinski Government</span>
+                                            <span class="oval-label__icon-second"><i class="icon-file-code-o"></i></span>
+                                        </div>
+                                        <div class="oval-label oval-label--blue">
+                                            <span class="oval-label__text oval-label__text--white">23</span>
+                                        </div>
+                                        <span class="text text--pd-lf text--mg--rg">cards include</span>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde corporis molestias nam qui deleniti suscipit voluptate tempore quo iure quam dignissimos quasi, ipsum, magnam mollitia. Dolores dolorem beatae adipisci tenetur!</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <span class="selection-btn__icon selection-btn__icon--big selection-btn__icon--mg"></span>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, optio nihil earum cupiditate magnam deleniti, maiores eaque blanditiis quam distinctio non dicta tenetur voluptatum accusamus possimus eum ad, esse veniam?</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <div class="flags">
+                                            <span class="flags__logo"></span>
+                                            <span class="flags__logo flags__logo--position"></span>
+                                        </div> 
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure culpa dolores ipsam fuga animi minima, delectus est possimus tempora eligendi atque saepe laboriosam distinctio nulla, magni, recusandae voluptas! Nobis?</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer"></div> <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <span class="selection-btn__icon selection-btn__icon--big selection-btn__icon--mg"></span>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur ipsum autem, labore laudantium quam, recusandae cumque fuga impedit quod ducimus, aspernatur minus reprehenderit facilis natus rerum error explicabo quis.</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <span class="selection-btn__icon selection-btn__icon--big selection-btn__icon--mg"></span>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, temporibus tempora! Modi dolores ipsam saepe et, ducimus, quae pariatur, aliquid excepturi consequuntur at consequatur deserunt possimus veniam ut earum omnis.</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <div class="flags">
+                                            <span class="flags__logo"></span>
+                                            <span class="flags__logo flags__logo--position"></span>
+                                        </div>   
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam minus doloremque laudantium commodi, error illo eos laboriosam perspiciatis harum corporis recusandae eum quo cumque rem autem velit vel. Temporibus.</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <div class="aside-icon aside-icon--mr-auto">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor, quaerat accusamus, ab quia animi modi praesentium quo debitis, non delectus? Provident tenetur nisi consequuntur beatae voluptatum! Officiis, quo? Et!</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <div class="aside-icon aside-icon--mr-auto">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi quidem optio asperiores animi, molestias, quam numquam laboriosam nulla eius sit porro neque eos, dignissimos modi quo explicabo culpa delectus?</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-3">
+                           <div class="card card-active">
+                               <div class="card__header">
+                                    <div class="filter-value">
+                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                        <div class="aside-icon aside-icon--mr-auto">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__text">Yes/No</span>
+                                    </div>
+                               </div>
+                               <div class="card__content">
+                                   <date class="card__date card__date-pd">18/09/2018</date>
+                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est, sapiente officia magnam dolore maxime corrupti deleniti, dignissimos consequatur facere perferendis velit similique illo ipsam? Omnis ducimus minus ratione enim!</p>
+                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                               </div>
+                               <div class="card__footer">
+                                    <div class="card__footer-top">
+                                        <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                        </div>
+                                        <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         </div>
+                                    </div>
+                                    <div class="card__footer-bottom">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                         </div>
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                         </div>
+                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </section>
+               <section class="main-content__bottom">
+                   <a href="#" class="button button--bg-blue">
+                       <span class="button__text button__text--white">LOAD MORE</span>
+                   </a>
+                   <ul class="pages-count">
+                       <li class="pages-count__item"><a href="" class="pages-count__ancor">1</a></li>
+                       <li class="pages-count__item pages-count__item-active"><a href="" class="pages-count__ancor pages-count__ancor-active">2</a></li>
+                       <li class="pages-count__item"><a href="" class="pages-count__ancor">3</a></li>
+                       <li class="pages-count__item"><a href="" class="pages-count__ancor">4</a></li>
+                       <li class="pages-count__item"><a href="" class="pages-count__ancor">5</a></li>
+                       <li class="pages-count__item"><a href="" class="pages-count__ancor">...</a></li>
+                       <li class="pages-count__item"><a href="" class="pages-count__ancor">23</a></li>
+                   </ul>
+               </section>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <section class="footer-content">
+                    <div class="filter-checkbox filter-checkbox--pd-rg">
+                        <input type="checkbox" name="select-all" id="full-selection" class="filter-checkbox__input filter-checkbox__input--mr-rg">
+                        <label for="full-selection" class="filter-checkbox__label">select all visible</label>
+                    </div>
+                    <div class="oval-label oval-label--blue">
+                        <span class="oval-label__text oval-label__text--white">1</span>
+                    </div>
+                    <span class="text text--pd-lf text--mg--rg">item selected</span>
+                    <ul class="footer-list">
+                            <li class="small-card small-card--row">
+                                <a href="#">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Pulish</span>
+                                </a>
+                            </li>
+                            <li class="small-card">
+                                <a href="">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Archive</span>
+                                </a>
+                            </li>
+                            <li class="small-card small-card--row">
+                                <a href="#">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Dublicate</span>
+                                </a>
+                            </li>
+                            <li class="small-card small-card--row">
+                                <a href="#">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Folder</span>
+                                </a>
+                            </li>
+                            <li class="small-card small-card--row">
+                                <a href="#">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Target</span>
+                                </a>
+                            </li>
+                            <li class="small-card small-card--row">
+                                <a href="#">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Report</span>
+                                </a>
+                            </li>
+                            <li class="small-card small-card--row">
+                                <a href="#">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Export</span>
+                                </a>
+                            </li>
+                            <li class="small-card small-card--row">
+                                <a href="#">
+                                    <div class="small-card__icon">+</div>
+                                    <span class="small-card__title">Delete</span>
+                                </a>
+                            </li> 
+                        </ul>
+                        <span class="text text--mg--lf"><span>shift+click</span> to select, <span>esc</span> to deselect all</span>
+                </section>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/kozikov.js"></script>
+</body>
+</html>

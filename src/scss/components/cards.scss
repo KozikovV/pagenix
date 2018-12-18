@@ -1,0 +1,159 @@
+@import '../variable';
+
+.small-card {
+    text-align: center;
+    padding-top:  $padding-m;
+    padding-bottom: $padding-m;
+    display: inline-block;
+    width: 100%;
+}
+.small-card--row {
+    padding-right: $padding-s;
+    padding-left: $padding-s;
+}
+.small-card-active {
+    background-color: $card-active-color;
+    border-left: 3px solid $main-color-blue;
+}
+
+.small-card__icon {
+    font-size: $nav-icon-font-size;
+    margin-bottom: $margin-s + 4px;
+    color: $main-color-black;
+}
+.small-card__icon-active {
+    color: $main-color-blue;
+}
+
+.small-card__title {
+    color: $main-color-grey;
+    text-align: center;
+    width: 100%;
+    font-size: $font-size-m;
+}
+/*Folders*/
+
+.folders {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $main-bg-color;
+    padding: $padding-xl + 10px;
+}
+
+.folders__item {
+    margin-right: $margin-xxl;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 16%;
+}
+
+.folders__logo--mg-rh {
+    margin-right: $margin-l;
+}
+.folders__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.folders__title {
+    font-size: $font-size-xl;
+    color: $main-color-black;
+    margin-bottom: $margin-xs;
+}
+.folders__title-blue {
+    color: $main-color-blue;
+}
+.folders__count {
+    font-size: $font-size-xs;
+    color: $main-color-grey;
+    margin-right: auto;
+}
+
+
+/*Main cards*/
+.row {
+    margin: 0 -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-3 {
+    width: 25%;
+    padding: $padding-m;
+}
+
+.card {
+    padding-right: $padding-xl;
+    padding-left: $padding-xl;
+    background-color: $main-color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+.card--bg-grey {
+    background-color: $card-bg-grey;
+}
+.card__header {
+    padding-top: $padding-xl + 10px;
+    padding-bottom: $padding-xl + 10px;
+    width: 100%;
+}
+.filter-value {
+    padding-bottom: $padding-xl + 10px;
+}
+
+.card__date {
+    font-size: $font-size-xl - 3px;
+    color: $main-color-grey;
+    display: inline-block;
+}
+.card__date-pd {
+    margin-bottom: $margin-s;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: $padding-xxl;
+    border-bottom: 3px solid $border-color;
+}
+
+.card__content--position {
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+
+.card__text {
+    font-size: $font-size-xl;
+    color: $main-color-black;
+    font-weight: $font-weight-medium;
+    line-height: 1.5;
+}
+.card__text--pd-bt {
+    padding-bottom: $padding-s;
+}
+.card__text--position {
+    text-align: center;
+}
+.card__footer {
+    width: 100%;
+    padding: $padding-l 0;
+}
+
+.card__footer--position {
+    text-align: center;
+}
+
+.card__logo {
+    margin: 0 auto;
+    padding-top: $padding-xxl;
+}
+.card__logo--position {
+    padding: 0;
+}

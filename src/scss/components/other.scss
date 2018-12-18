@@ -1,0 +1,205 @@
+@import '../variable';
+
+%cleaner {
+    padding: 0;
+    margin: 0;
+}
+
+.icon-ancor {
+    display: inline-block;
+    position: relative;
+    padding: $padding-m;
+    text-decoration: none;
+    cursor: pointer;
+}
+.icon-ancor--pading--left {
+    padding-left: $padding-xl + 10px;
+}
+.icon-ancor--pading--right {
+    padding-right: $padding-xl + 10px;
+}
+.icon-ancor__icon {
+    font-size: $font-size-xl + $font-size-l;
+    color: $main-color-black;
+}
+.icon-ancor__icon--grey {
+    color: $main-color-grey;
+}
+.icon-ancor__count {
+    background-color: $main-color-blue;
+    border: 2px solid $border-color;
+    color: $main-color-white;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: $padding-xxs;
+    border-radius: 50%;
+}
+
+.title {
+    padding: ($padding-xl + 10px) ($padding-xl + $padding-m);
+    
+}
+.title--pd-lf {
+    padding-left: 0;
+}
+.title--border-right {
+    border-right: 1px solid  $border-color;
+}
+
+.title__main {
+    @extend %cleaner;
+    font-size: $title-font-size;
+    color: $main-color-black;
+    font-weight: $font-weight-bold;
+}
+.title__helper {
+    width: 100%;
+    color: $main-color-grey;
+    font-size: $font-size-xl;
+}
+
+.user-info {
+    display: inline-block;
+    height: 100%;
+    padding: 53px 80px;
+}
+.user-info--border-left {
+    border-left: 1px solid  $border-color;
+}
+.user-info--padding-left {
+    padding-left: $padding-xl + 10px;
+}
+.user-info__title {
+    font-size: $font-size-xl + 10px;
+    color: $main-color-black;
+    display: inline-block;
+    @extend %cleaner;
+    width: 100%;
+}
+.user-info__text {
+    font-size: $font-size-l;
+    color: $main-color-grey;
+}
+.user-info__icon {
+    font-size: $title-font-size;
+    color: $main-color-black;
+    display: inline-block;
+    transform: rotate(90deg) translate(-20px,-245px);
+}
+
+.oval-label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-xxs $padding-m;
+    border-radius: 50px;
+    background-color: $lable-color;
+}
+
+.oval-label--width {
+    width: 100%;
+    margin: 0;
+}
+
+.oval-label--bg-white {
+    background-color: $main-color-white;
+}
+.oval-label--mr-rg {
+    margin-right: auto;
+} 
+.oval-label--cleaner {
+    padding: 0;
+    display: inline-block;
+}
+.oval-label--mr-position {
+    margin-right: $margin-m;
+}
+.oval-label--blue {
+    background-color: $main-color-blue;
+}
+
+.oval-label__icon-first {
+    font-size: $font-size-m + $font-size-s;
+    color: $main-color-grey;
+    padding-right: $padding-xxs;
+}
+
+.oval-label__text {
+    font-size: $font-size-m + $font-size-s;
+    color: $main-color-black;
+}
+
+.oval-label__text--white {
+    font-size: $font-size-m + $font-size-s;
+    color: $main-color-white;
+}
+
+.oval-label__text--blue{
+    color: $main-color-blue;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+}
+
+.oval-label__icon-second {
+    font-size: $font-size-m + $font-size-l;
+    color: $main-color-black;
+    padding-left: $padding-xxs;
+}
+
+.text--big {
+    margin-left: auto;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    color: $main-color-black;
+    padding-right:  $padding-m;
+}
+
+
+.aside-icon__icon {
+    font-size: $font-size-l + 5px;
+    color: $main-color-grey;
+}
+.aside-icon--mr-auto {
+    margin-left: auto;
+    margin-right: $margin-m;
+}
+.aside-icon {
+    position: relative;
+}
+.aside-icon--pd-lt:before {
+    content: '';
+    width: 3px;
+    background-color: $border-color;
+    display: inline-block;
+    height: 105px;
+    top: -35px;
+    left: -40px;
+    position: absolute;
+}
+.aside-icon__text {
+    font-size: $font-size-l + 5px;
+    color: $main-color-grey;
+}
+.aside-icon__text--mr-rg {
+    margin-right: $margin-s;
+}
+
+.flags {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.flags__logo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: $main-color-blue;
+    border-radius: 50%;
+}
+
+.flags__logo--position {
+    background-color: $btn-lable-red;
+    transform: translatex(-23px);
+}
