@@ -46,3 +46,14 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " selection-btn__item--active";
   });
 }
+
+
+$(function(){
+  $('.dropdown__btn').on('click',function(){
+      $('.dropdown__btn').toggleClass('dropdown__btn--active');
+      $('.dropdown__menu').toggleClass('dropdown__menu--open');	
+});
+  $('.dropdown__categories .oval-label').on('click',function(this){
+    $('.dropdown__categories .oval-label').toggleClass('oval-label--reverse');	
+  });
+});

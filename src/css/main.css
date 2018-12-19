@@ -10,6 +10,74 @@
 /*PADDINGS*/
 /*MARGINS*/
 /*CONTAINER*/
+.dropdown {
+  position: relative; }
+
+.dropdown__btn {
+  width: 350px;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 3px solid #ededed;
+  padding: 30px 20px;
+  border-radius: 15px;
+  z-index: 2;
+  position: relative;
+  background-color: #fff; }
+
+.dropdown__btn i {
+  margin-left: 100px; }
+
+.dropdown__menu {
+  position: absolute;
+  background-color: white;
+  padding: 30px;
+  border: 3px solid #ededed;
+  border-radius: 15px;
+  top: 85px;
+  z-index: 1;
+  width: 1000px;
+  height: 0;
+  overflow: hidden; }
+
+.dropdown__menu--open {
+  height: 1000px; }
+
+.dropdown__categories {
+  display: flex;
+  flex-wrap: wrap; }
+
+.dropdown__categories h2 {
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 40px; }
+
+.dropdown__categories .oval-label {
+  margin-bottom: 40px;
+  background-color: #fff;
+  border: 3px solid #ededed;
+  cursor: pointer; }
+
+.dropdown__categories .oval-label--reverse {
+  border: 3px solid #315efb; }
+
+.dropdown__menu {
+  display: flex;
+  flex-direction: column; }
+
+.dropdown__menu .aside-icon {
+  text-align: right; }
+
+.dropdown__menu .button {
+  display: inline-block;
+  margin-left: auto; }
+
+/*COLORS*/
+/*FONT-SIZE*/
+/*FONT_WEIGHT*/
+/*PADDINGS*/
+/*MARGINS*/
+/*CONTAINER*/
 .button--square-clean, .pages-count, .title__main, .user-info__title {
   padding: 0;
   margin: 0; }
@@ -202,7 +270,7 @@
   border-left: 3px solid #315efb; }
 
 .small-card__icon {
-  font-size: 80px;
+  font-size: 45px;
   margin-bottom: 24px;
   color: #000; }
 
@@ -546,6 +614,9 @@ input::-webkit-search-results-decoration {
 
 .oval-label--blue {
   background-color: #315efb; }
+
+.oval-label--reverse .oval-label__text {
+  color: #315efb; }
 
 .oval-label__icon-first {
   font-size: 30px;

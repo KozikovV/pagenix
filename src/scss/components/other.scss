@@ -119,6 +119,10 @@
     background-color: $main-color-blue;
 }
 
+.oval-label--reverse .oval-label__text {
+    color: $main-color-blue;
+}
+
 .oval-label__icon-first {
     font-size: $font-size-m + $font-size-s;
     color: $main-color-grey;
