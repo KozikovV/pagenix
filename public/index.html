@@ -38,7 +38,7 @@
             <div class="user-info user-info--padding-left user-info--border-left">
                 <h2 class="user-info__title">Superadmin</h2>
                 <span class="user-info__text">Tampere / Tampereen Raati</span>
-                <span class="user-info__icon">. . .</span>
+                <a href="#" class="user-info__icon">. . .</a>
             </div>
         </header>
         <main class="content">
@@ -145,9 +145,18 @@
                        <input type="checkbox" class="oval-button__input" id="oval-button">
                        <label for="oval-button" class="oval-button__label">show only my activity</label>    
                    </div>
-                   <a href="" class="button button--margin-left"><span class="button__icon"><i class="icon-file-code-o"></i></span><span class="button__text">LUNGUAGES</span></a>
-                   <a href="" class="button button--margin-left-position"><span class="button__icon"><i class="icon-file-code-o"></i></span><span class="button__text">CATEGORIES</span></a>
-                   <a href="" class="button button--bg-blue button--margin-left-position"><span class="button__icon button__icon--white"><i class="icon-file-code-o"></i></span><span class="button__text button__text--white">ADD CARD</span></a>
+                   <a href="" class="button button--margin-left">
+                       <span class="button__icon"><i class="icon-globe"></i></span>
+                       <span class="button__text">LUNGUAGES</span>
+                    </a>
+                   <a href="" class="button button--margin-left-position">
+                       <span class="button__icon"><i class="icon-stack-overflow"></i></span>
+                       <span class="button__text">CATEGORIES</span>
+                    </a>
+                   <a href="" class="button button--bg-blue button--margin-left-position">
+                       <span class="button__icon button__icon--white"><i class="icon-calendar-plus-o"></i></span>
+                       <span class="button__text button__text--white">ADD CARD</span>
+                    </a>
                </section>
                <article class="selection-cards">
                    <section id="selection-btn" class="selection-btn clearfix">
@@ -155,8 +164,8 @@
                         <button class="selection-btn__item" onclick="filterSelection('active')"><span class="selection-btn__icon"></span>Active<span class="selection-btn__count">(99)</span></button>
                         <button class="selection-btn__item" onclick="filterSelection('shedules')"><span class="selection-btn__icon selection-btn__icon--orange"></span>Shedules<span class="selection-btn__count">(99)</span></button>
                         <button class="selection-btn__item" onclick="filterSelection('expired')"><span class="selection-btn__icon selection-btn__icon--red"></span>expired<span class="selection-btn__count">(99)</span></button>
-                        <button class="selection-btn__item" onclick="filterSelection('archived')"><span class="selection-btn__icon selection-btn__font-icon--black"><i class="icon-file-code-o"></i></span>archived<span class="selection-btn__count">(99)</span></button>
-                        <button class="selection-btn__item" onclick="filterSelection('rss')"><span class="selection-btn__icon selection-btn__font-icon--orange"><i class="icon-file-code-o"></i></span>from rss<span class="selection-btn__count">(99)</span></button>
+                        <button class="selection-btn__item" onclick="filterSelection('archived')"><span class="selection-btn__icon selection-btn__font-icon--black"><i class="icon-archive"></i></span>archived<span class="selection-btn__count">(99)</span></button>
+                        <button class="selection-btn__item" onclick="filterSelection('rss')"><span class="selection-btn__icon selection-btn__font-icon--orange"><i class="icon-rss"></i></span>from rss<span class="selection-btn__count">(99)</span></button>
                         <span class="text text--float">showing 1-20 from 299</span>
                     </section>
                     <form class="filters">
@@ -168,21 +177,21 @@
                        </select>
                        <span class="dots">:</span>
                        <div class="oval-label oval-label--mr-position">
-                            <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                            <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
                             <span class="oval-label__text">Yes/No</span>
-                            <span class="oval-label__icon-second">X</span>
+                            <span class="oval-label__icon-second"><i class="icon-close"></i></span>
                         </div>
                         <div class="oval-label oval-label--mr-position">
-                            <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                            <span class="oval-label__icon-first"><i class="icon-crosshairs"></i></span>
                             <span class="oval-label__text">Age range 30-60</span>
-                            <span class="oval-label__icon-second">X</span>
+                            <span class="oval-label__icon-second"><i class="icon-close"></i></span>
                         </div>
                         <div class="oval-label oval-label--mr-position">
-                            <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                            <span class="oval-label__icon-first"></span>
                             <span class="oval-label__text">Newspaper</span>
-                            <span class="oval-label__icon-second">X</span>
+                            <span class="oval-label__icon-second"><i class="icon-close"></i></span>
                         </div>
-                        <span class="icon"><i class="icon-file-code-o"></i></span>
+                        <span class="icon"><i class="icon-trash"></i></span>
                         <span class="text--big">Sort by :</span>
                         <select name="select" id="select" class='select select--mg-rg'>
                             <option class="select__option" value="filters" selected>No selected</option>
@@ -190,8 +199,10 @@
                             <option class="select__option" value="">value</option>
                             <option class="select__option" value="">cards</option>
                         </select>
-                        <a href="#" class="button button--square-clean button--mg-rg"><span class="button__icon button__icon--clean"><i class="icon-file-code-o"></i></span></a>
-                        <span class="icon icon--mr-lf"><i class="icon-file-code-o"></i></span>   
+                        <a href="#" class="button button--square-clean button--mg-rg">
+                            <span class="button__icon button__icon--clean"><i class="icon-long-arrow-down"></i></span>
+                        </a>
+                        <span class="icon icon--mr-lf"><i class="icon-search"></i></span>   
                     </form>
                     <section class="folders">
                         <div class="folders__item">
@@ -234,7 +245,7 @@
                </article>
                <section class="main-cards">
                    <div class="row">
-                       <div class="col-3">
+                        <div class="col-3">
                            <div class="card card--bg-grey card-active">
                                 <div class="card__logo">
                                    <img src="images/veyer.png" alt="logo">
@@ -247,19 +258,19 @@
                                     </a>
                                 </div>
                            </div>
-                       </div>
-                       <div class="col-3">
+                        </div>
+                        <div class="col-3">
                            <div class="card card-active">
                                <div class="card__header">
                                     <div class="filter-value">
                                         <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
                                         <div class="aside-icon aside-icon--mr-auto">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__icon"><i class="icon-level-up"></i></span>
                                         </div>
                                         <span class="selection-btn__icon selection-btn__icon--big"></span>
                                     </div>
                                     <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
                                         <span class="oval-label__text">Yes/No</span>
                                     </div>
                                </div>
@@ -268,39 +279,42 @@
                                    <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum tempore dignissimos, natus reiciendis rerum autem incidunt perspiciatis quae quia delectus, cumque asperiores voluptatibus molestias officia consequuntur soluta totam accusamus.</p>
                                    <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
                                </div>
-                               <div class="card__footer">
+                                <div class="card__footer">
                                     <div class="card__footer-top">
                                         <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__icon"><i class="icon-eye"></i></span>
                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
                                         </div>
                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
                                          </div>
                                          <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-user"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
                                          </div>
+                                         <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                        </div>
                                     </div>
                                     <div class="card__footer-bottom">
                                          <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-edit"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
                                          </div>
                                          <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
                                          </div>
                                          <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
                                          </div>
                                     </div>
                                 </div>
                            </div>
-                       </div>
-                       <div class="col-3">
+                        </div>
+                        <div class="col-3">
                            <div class="card card-active">
                                 <div class="card__header">
                                     <div class="filter-value">
@@ -324,255 +338,8 @@
                                     </div>
                                 </div>
                            </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                    </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
-                                    </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde corporis molestias nam qui deleniti suscipit voluptate tempore quo iure quam dignissimos quasi, ipsum, magnam mollitia. Dolores dolorem beatae adipisci tenetur!</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
-                                         </div>
-                                    </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
-                                    </div>
-                                </div>
-                           </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                        <span class="selection-btn__icon selection-btn__icon--big selection-btn__icon--mg"></span>
-                                    </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
-                                    </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, optio nihil earum cupiditate magnam deleniti, maiores eaque blanditiis quam distinctio non dicta tenetur voluptatum accusamus possimus eum ad, esse veniam?</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
-                                         </div>
-                                    </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
-                                    </div>
-                                </div>
-                           </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                        <div class="flags">
-                                            <span class="flags__logo"></span>
-                                            <span class="flags__logo flags__logo--position"></span>
-                                        </div> 
-                                    </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
-                                    </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure culpa dolores ipsam fuga animi minima, delectus est possimus tempora eligendi atque saepe laboriosam distinctio nulla, magni, recusandae voluptas! Nobis?</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer"></div> <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
-                                         </div>
-                                    </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
-                                    </div>
-                                </div>
-                           </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                        <span class="selection-btn__icon selection-btn__icon--big selection-btn__icon--mg"></span>
-                                    </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
-                                    </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur ipsum autem, labore laudantium quam, recusandae cumque fuga impedit quod ducimus, aspernatur minus reprehenderit facilis natus rerum error explicabo quis.</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
-                                         </div>
-                                    </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
-                                    </div>
-                                </div>
-                           </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                        <span class="selection-btn__icon selection-btn__icon--big selection-btn__icon--mg"></span>
-                                    </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
-                                    </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, temporibus tempora! Modi dolores ipsam saepe et, ducimus, quae pariatur, aliquid excepturi consequuntur at consequatur deserunt possimus veniam ut earum omnis.</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
-                                         </div>
-                                    </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
-                                    </div>
-                                </div>
-                           </div>
-                       </div>
-                       <div class="col-3">
+                        </div>
+                        <div class="col-3">
                            <div class="card card-active">
                                <div class="card__header">
                                     <div class="filter-value">
@@ -583,7 +350,7 @@
                                         </div>   
                                     </div>
                                     <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
+                                        <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
                                         <span class="oval-label__text">Yes/No</span>
                                     </div>
                                </div>
@@ -595,188 +362,423 @@
                                <div class="card__footer">
                                     <div class="card__footer-top">
                                         <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                            <span class="aside-icon__icon"><i class="icon-eye"></i></span>
                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
                                         </div>
                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
                                          </div>
                                          <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-user"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
                                          </div>
+                                         <div class="aside-icon">
+                                            <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                        </div>
                                     </div>
                                     <div class="card__footer-bottom">
                                          <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-edit"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
                                          </div>
                                          <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
                                          </div>
                                          <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                                             <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
                                          </div>
                                     </div>
                                 </div>
                            </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                        <div class="aside-icon aside-icon--mr-auto">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
-                                    </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor, quaerat accusamus, ab quia animi modi praesentium quo debitis, non delectus? Provident tenetur nisi consequuntur beatae voluptatum! Officiis, quo? Et!</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
+                        </div>
+                        <div class="col-3">
+                            <div class="card card-active">
+                                <div class="card__header">
+                                     <div class="filter-value">
+                                         <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                         <div class="aside-icon aside-icon--mr-auto">
+                                             <span class="aside-icon__icon"><i class="icon-level-up"></i></span>
+                                         </div>
+                                         <span class="selection-btn__icon selection-btn__icon--big"></span>
+                                     </div>
+                                     <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                         <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
+                                         <span class="oval-label__text">Yes/No</span>
+                                     </div>
+                                </div>
+                                <div class="card__content">
+                                    <date class="card__date card__date-pd">18/09/2018</date>
+                                    <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum tempore dignissimos, natus reiciendis rerum autem incidunt perspiciatis quae quia delectus, cumque asperiores voluptatibus molestias officia consequuntur soluta totam accusamus.</p>
+                                    <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                                </div>
+                                 <div class="card__footer">
+                                     <div class="card__footer-top">
+                                         <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-eye"></i></span>
                                              <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
                                          </div>
                                          <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                              <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
+                                              <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                          </div>
+                                          <div class="aside-icon">
+                                              <span class="aside-icon__icon"><i class="icon-user"></i></span>
+                                              <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                          </div>
+                                          <div class="aside-icon">
+                                             <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                         </div>
+                                     </div>
+                                     <div class="card__footer-bottom">
+                                          <div class="aside-icon">
+                                              <span class="aside-icon__icon"><i class="icon-edit"></i></span>
+                                              <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                          </div>
+                                          <div class="aside-icon">
+                                              <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
+                                              <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                          </div>
+                                          <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                              <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
+                                              <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                          </div>
+                                     </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                                <div class="card card-active">
+                                    <div class="card__header">
+                                         <div class="filter-value">
+                                             <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                             <div class="flags">
+                                                 <span class="flags__logo"></span>
+                                                 <span class="flags__logo flags__logo--position"></span>
+                                             </div>   
+                                         </div>
+                                         <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                             <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
+                                             <span class="oval-label__text">Yes/No</span>
                                          </div>
                                     </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
+                                    <div class="card__content">
+                                        <date class="card__date card__date-pd">18/09/2018</date>
+                                        <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam minus doloremque laudantium commodi, error illo eos laboriosam perspiciatis harum corporis recusandae eum quo cumque rem autem velit vel. Temporibus.</p>
+                                        <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
                                     </div>
+                                    <div class="card__footer">
+                                         <div class="card__footer-top">
+                                             <div class="aside-icon">
+                                                 <span class="aside-icon__icon"><i class="icon-eye"></i></span>
+                                                 <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                             </div>
+                                             <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-user"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                 <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                             </div>
+                                         </div>
+                                         <div class="card__footer-bottom">
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-edit"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                              </div>
+                                              <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                                  <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                              </div>
+                                         </div>
+                                     </div>
                                 </div>
-                           </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                        <div class="aside-icon aside-icon--mr-auto">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                        </div>
+                        </div>
+                        <div class="col-3">
+                                 <div class="card card-active">
+                                     <div class="card__header">
+                                          <div class="filter-value">
+                                              <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                              <div class="aside-icon aside-icon--mr-auto">
+                                                  <span class="aside-icon__icon"><i class="icon-level-up"></i></span>
+                                              </div>
+                                              <span class="selection-btn__icon selection-btn__icon--big"></span>
+                                          </div>
+                                          <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                              <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
+                                              <span class="oval-label__text">Yes/No</span>
+                                          </div>
+                                     </div>
+                                     <div class="card__content">
+                                         <date class="card__date card__date-pd">18/09/2018</date>
+                                         <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum tempore dignissimos, natus reiciendis rerum autem incidunt perspiciatis quae quia delectus, cumque asperiores voluptatibus molestias officia consequuntur soluta totam accusamus.</p>
+                                         <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                                     </div>
+                                      <div class="card__footer">
+                                          <div class="card__footer-top">
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-eye"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                               </div>
+                                               <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-user"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                               </div>
+                                               <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                              </div>
+                                          </div>
+                                          <div class="card__footer-bottom">
+                                               <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-edit"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                               </div>
+                                               <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                               </div>
+                                               <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                                   <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                               </div>
+                                          </div>
+                                      </div>
+                                 </div>
+                        </div>
+                        <div class="col-3">
+                                <div class="card card-active">
+                                    <div class="card__header">
+                                         <div class="filter-value">
+                                             <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                             <div class="flags">
+                                                 <span class="flags__logo"></span>
+                                                 <span class="flags__logo flags__logo--position"></span>
+                                             </div>   
+                                         </div>
+                                         <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                             <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
+                                             <span class="oval-label__text">Yes/No</span>
+                                         </div>
                                     </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
+                                    <div class="card__content">
+                                        <date class="card__date card__date-pd">18/09/2018</date>
+                                        <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam minus doloremque laudantium commodi, error illo eos laboriosam perspiciatis harum corporis recusandae eum quo cumque rem autem velit vel. Temporibus.</p>
+                                        <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
                                     </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi quidem optio asperiores animi, molestias, quam numquam laboriosam nulla eius sit porro neque eos, dignissimos modi quo explicabo culpa delectus?</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                    <div class="card__footer">
+                                         <div class="card__footer-top">
+                                             <div class="aside-icon">
+                                                 <span class="aside-icon__icon"><i class="icon-eye"></i></span>
+                                                 <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                             </div>
+                                             <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-user"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                 <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                             </div>
                                          </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         <div class="card__footer-bottom">
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-edit"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                              </div>
+                                              <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                                  <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                              </div>
                                          </div>
-                                    </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
-                                    </div>
+                                     </div>
                                 </div>
-                           </div>
-                       </div>
-                       <div class="col-3">
-                           <div class="card card-active">
-                               <div class="card__header">
-                                    <div class="filter-value">
-                                        <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
-                                        <div class="aside-icon aside-icon--mr-auto">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="oval-label oval-label--bg-white oval-label--cleaner">
-                                        <span class="oval-label__icon-first"><i class="icon-file-code-o"></i></span>
-                                        <span class="oval-label__text">Yes/No</span>
-                                    </div>
-                               </div>
-                               <div class="card__content">
-                                   <date class="card__date card__date-pd">18/09/2018</date>
-                                   <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est, sapiente officia magnam dolore maxime corrupti deleniti, dignissimos consequatur facere perferendis velit similique illo ipsam? Omnis ducimus minus ratione enim!</p>
-                                   <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
-                               </div>
-                               <div class="card__footer">
-                                    <div class="card__footer-top">
-                                        <div class="aside-icon">
-                                            <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                            <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
-                                        </div>
-                                        <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                             </div>
+                             <div class="col-3">
+                                 <div class="card card-active">
+                                     <div class="card__header">
+                                          <div class="filter-value">
+                                              <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                              <div class="aside-icon aside-icon--mr-auto">
+                                                  <span class="aside-icon__icon"><i class="icon-level-up"></i></span>
+                                              </div>
+                                              <span class="selection-btn__icon selection-btn__icon--big"></span>
+                                          </div>
+                                          <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                              <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
+                                              <span class="oval-label__text">Yes/No</span>
+                                          </div>
+                                     </div>
+                                     <div class="card__content">
+                                         <date class="card__date card__date-pd">18/09/2018</date>
+                                         <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum tempore dignissimos, natus reiciendis rerum autem incidunt perspiciatis quae quia delectus, cumque asperiores voluptatibus molestias officia consequuntur soluta totam accusamus.</p>
+                                         <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                                     </div>
+                                      <div class="card__footer">
+                                          <div class="card__footer-top">
+                                              <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-eye"></i></span>
+                                                  <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                              </div>
+                                              <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                               </div>
+                                               <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-user"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                               </div>
+                                               <div class="aside-icon">
+                                                  <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                              </div>
+                                          </div>
+                                          <div class="card__footer-bottom">
+                                               <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-edit"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                               </div>
+                                               <div class="aside-icon">
+                                                   <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                               </div>
+                                               <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                                   <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
+                                                   <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                               </div>
+                                          </div>
+                                      </div>
+                                 </div>
+                             </div>
+                             <div class="col-3">
+                                     <div class="card card-active">
+                                         <div class="card__header">
+                                              <div class="filter-value">
+                                                  <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                                  <div class="flags">
+                                                      <span class="flags__logo"></span>
+                                                      <span class="flags__logo flags__logo--position"></span>
+                                                  </div>   
+                                              </div>
+                                              <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                                  <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
+                                                  <span class="oval-label__text">Yes/No</span>
+                                              </div>
                                          </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                         <div class="card__content">
+                                             <date class="card__date card__date-pd">18/09/2018</date>
+                                             <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam minus doloremque laudantium commodi, error illo eos laboriosam perspiciatis harum corporis recusandae eum quo cumque rem autem velit vel. Temporibus.</p>
+                                             <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
                                          </div>
-                                    </div>
-                                    <div class="card__footer-bottom">
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
-                                         </div>
-                                         <div class="aside-icon">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
-                                         </div>
-                                         <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
-                                             <span class="aside-icon__icon"><i class="icon-file-code-o"></i></span>
-                                             <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
-                                         </div>
-                                    </div>
-                                </div>
-                           </div>
-                       </div>
+                                         <div class="card__footer">
+                                              <div class="card__footer-top">
+                                                  <div class="aside-icon">
+                                                      <span class="aside-icon__icon"><i class="icon-eye"></i></span>
+                                                      <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                                  </div>
+                                                  <div class="aside-icon">
+                                                       <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
+                                                       <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                                   </div>
+                                                   <div class="aside-icon">
+                                                       <span class="aside-icon__icon"><i class="icon-user"></i></span>
+                                                       <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                                   </div>
+                                                   <div class="aside-icon">
+                                                      <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                                  </div>
+                                              </div>
+                                              <div class="card__footer-bottom">
+                                                   <div class="aside-icon">
+                                                       <span class="aside-icon__icon"><i class="icon-edit"></i></span>
+                                                       <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                                   </div>
+                                                   <div class="aside-icon">
+                                                       <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
+                                                       <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                                   </div>
+                                                   <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                                       <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
+                                                       <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                                   </div>
+                                              </div>
+                                          </div>
+                                     </div>
+                             </div>
+                             <div class="col-3">
+                                      <div class="card card-active">
+                                          <div class="card__header">
+                                               <div class="filter-value">
+                                                   <div class="filter-checkbox"><input type="checkbox" class="filter-checkbox__input"></div>
+                                                   <div class="aside-icon aside-icon--mr-auto">
+                                                       <span class="aside-icon__icon"><i class="icon-level-up"></i></span>
+                                                   </div>
+                                                   <span class="selection-btn__icon selection-btn__icon--big"></span>
+                                               </div>
+                                               <div class="oval-label oval-label--bg-white oval-label--cleaner">
+                                                   <span class="oval-label__icon-first"><i class="icon-toggle-on"></i></span>
+                                                   <span class="oval-label__text">Yes/No</span>
+                                               </div>
+                                          </div>
+                                          <div class="card__content">
+                                              <date class="card__date card__date-pd">18/09/2018</date>
+                                              <p class="card__text card__text--pd-bt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum tempore dignissimos, natus reiciendis rerum autem incidunt perspiciatis quae quia delectus, cumque asperiores voluptatibus molestias officia consequuntur soluta totam accusamus.</p>
+                                              <div class="oval-label"><span class="oval-label__text oval-label__text--blue">TRAVEL</span></div>
+                                          </div>
+                                           <div class="card__footer">
+                                               <div class="card__footer-top">
+                                                   <div class="aside-icon">
+                                                       <span class="aside-icon__icon"><i class="icon-eye"></i></span>
+                                                       <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                                   </div>
+                                                   <div class="aside-icon">
+                                                        <span class="aside-icon__icon"><i class="icon-commenting-o"></i></span>
+                                                        <span class="aside-icon__text aside-icon__text--mr-rg">63</span>
+                                                    </div>
+                                                    <div class="aside-icon">
+                                                        <span class="aside-icon__icon"><i class="icon-user"></i></span>
+                                                        <span class="aside-icon__text aside-icon__text--mr-rg">Superadmin</span>
+                                                    </div>
+                                                    <div class="aside-icon">
+                                                       <span class="aside-icon__icon"><i class="icon-camera"></i></span>
+                                                   </div>
+                                               </div>
+                                               <div class="card__footer-bottom">
+                                                    <div class="aside-icon">
+                                                        <span class="aside-icon__icon"><i class="icon-edit"></i></span>
+                                                        <span class="aside-icon__text aside-icon__text--mr-rg">detail</span>
+                                                    </div>
+                                                    <div class="aside-icon">
+                                                        <span class="aside-icon__icon"><i class="icon-bar-chart"></i></span>
+                                                        <span class="aside-icon__text aside-icon__text--mr-rg">statistic</span>
+                                                    </div>
+                                                    <div class="aside-icon aside-icon--mr-auto aside-icon--pd-lt">
+                                                        <span class="aside-icon__icon"><i class="icon-bullhorn"></i></span>
+                                                        <span class="aside-icon__text aside-icon__text--mr-rg">notification</span>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                      </div>
+                             </div>
                    </div>
                </section>
                <section class="main-content__bottom">
@@ -809,49 +811,49 @@
                     <ul class="footer-list">
                             <li class="small-card small-card--row">
                                 <a href="#">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-paper-plane-o"></i></div>
                                     <span class="small-card__title">Pulish</span>
                                 </a>
                             </li>
                             <li class="small-card">
                                 <a href="">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-archive"></i></div>
                                     <span class="small-card__title">Archive</span>
                                 </a>
                             </li>
                             <li class="small-card small-card--row">
                                 <a href="#">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-files-empty"></i></div>
                                     <span class="small-card__title">Dublicate</span>
                                 </a>
                             </li>
                             <li class="small-card small-card--row">
                                 <a href="#">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-edit"></i></div>
                                     <span class="small-card__title">Folder</span>
                                 </a>
                             </li>
                             <li class="small-card small-card--row">
                                 <a href="#">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-crosshairs"></i></div>
                                     <span class="small-card__title">Target</span>
                                 </a>
                             </li>
                             <li class="small-card small-card--row">
                                 <a href="#">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-file-text"></i></div>
                                     <span class="small-card__title">Report</span>
                                 </a>
                             </li>
                             <li class="small-card small-card--row">
                                 <a href="#">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-bar-chart"></i></div>
                                     <span class="small-card__title">Export</span>
                                 </a>
                             </li>
                             <li class="small-card small-card--row">
                                 <a href="#">
-                                    <div class="small-card__icon">+</div>
+                                    <div class="small-card__icon"><i class="icon-trash"></i></div>
                                     <span class="small-card__title">Delete</span>
                                 </a>
                             </li> 
