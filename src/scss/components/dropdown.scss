@@ -1,0 +1,68 @@
+@import '../variable';
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__btn {
+    width: 350px;
+    font-size: $font-size-xl + 10px;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    border: 3px solid $border-color;
+    padding: $padding-m $padding-s;
+    border-radius: 15px;
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+}
+.dropdown__btn i {
+    margin-left: 100px;
+}
+
+.dropdown__menu {
+    position: absolute;
+    background-color: white;
+    padding: $padding-m;
+    border: 3px solid $border-color;
+    border-radius: 15px;
+    top: 85px;
+    z-index: 1;
+    width: 1000px;
+    height: 0;
+    overflow: hidden;
+}
+.dropdown__menu--open {
+    height: 1000px;
+} 
+
+.dropdown__categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dropdown__categories h2 {
+    width: 100%;
+    margin-bottom: $margin-m;
+    font-size: 40px;
+}
+
+.dropdown__categories .oval-label {
+    margin-bottom:  $margin-l;
+    background-color: #fff;
+    border: 3px solid $border-color;
+    cursor: pointer;
+}
+.dropdown__categories .oval-label--reverse {
+    border: 3px solid $main-color-blue;
+}
+.dropdown__menu {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown__menu .aside-icon {
+    text-align: right;
+}
+.dropdown__menu .button {
+    display: inline-block;
+    margin-left: auto;
+}
